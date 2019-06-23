@@ -1,0 +1,41 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.rowone {
+  grid-row: 1 / 2;
+  grid-column-gap: 10px;
+}
+
+.rowtwo {
+  grid-row: 2 / 3;
+}
+
+.one {
+  grid-column: 1 / 2;
+}
+
+.two {
+  grid-column: 2 / 3;
+}
+
+.meal-details {
+  padding: 10px;
+}
+
+#reset {
+  float: right;
+  margin-right: 10%
+}

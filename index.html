@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Waitstaff Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <h1>Waitstaff Calculator</h1>
+<div class ='wrapper'>
+  <div class='one'>
+    <h2>Meal Details</h2>
+    <form>
+      <div class= 'meal-details'>
+        <label for='base-meal-price'>Base Meal Price</label>
+      <input class='js-meal-details' id='js-base-meal-price' type="number" step="0.01">
+      </div>
+      <div class ='meal-details'>
+        <label for='tax-rate'>Tax Rate</label>
+      <input class='js-meal-details' id='js-tax-rate' type="number" step="0.01">
+      </div>
+      <div class='meal-details'><label for='tip-percentage'>Tip Percentage</label>
+      <input class='js-meal-details' id='js-tip-percentage' type='number' step="0.01">
+      </div>
+    <div class='meal-details'>
+      <button type='submit' id='js-meal-details-submit'>Submit</button>
+      <button type='reset'>Cancel</button></div>
+    </form>
+  </div>
+
+<div class='two'>
+  <div class='rowone customer-charges'>
+    <h2>Customer Charges</h2>
+    <p>Subtotal: <span class ='js-subtotal'>0.00</span></p>
+    <p>Tip: <span class ='js-tip'>0.00</span></p>
+    <p>Total: <span class ='js-total'>0.00</span></p>
+  </div>
+  
+  <div class='rowtwo my-earnings-info'>
+      <h2>My Earnings Info</h2>
+        <p>Tip Total: <span class ='js-tip-total'>0.00</span></p>
+        <p>Meal Count: <span class ='js-meal-count'>0</span></p>
+        <p>Average Tip Per Meal: <span class ='js-avg-tip'>0.00</span></p>
+    </div>
+  </div>
+</div>
+<form id='reset'>
+  <button type='submit' id='reset'>Reset</button></form>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="store.js"></script>
+    <script type="text/javascript" src="calc.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
